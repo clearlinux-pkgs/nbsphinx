@@ -1,0 +1,28 @@
+--- nbsphinx-0.3.5/setup.py~	2018-09-09 10:56:20.000000000 +0000
++++ nbsphinx-0.3.5/setup.py	2018-09-10 15:37:58.511551138 +0000
+@@ -15,7 +15,7 @@
+     install_requires=[
+         'docutils',
+         'jinja2',
+-        'nbconvert!=5.4',
++        'nbconvert',
+         'traitlets',
+         'nbformat',
+         'sphinx>=1.3.2',
+--- nbsphinx-0.3.5/src/nbsphinx.egg-info/requires.txt~	2018-09-10 09:04:00.000000000 +0000
++++ nbsphinx-0.3.5/src/nbsphinx.egg-info/requires.txt	2018-09-10 15:38:18.706550857 +0000
+@@ -1,6 +1,6 @@
+ docutils
+ jinja2
+-nbconvert!=5.4
++nbconvert
+ traitlets
+ nbformat
+ sphinx>=1.3.2
+--- nbsphinx-0.3.5/doc/requirements.txt~	2018-09-09 10:56:20.000000000 +0000
++++ nbsphinx-0.3.5/doc/requirements.txt	2018-09-10 15:38:34.213550641 +0000
+@@ -1,3 +1,3 @@
+ sphinx>=1.5.1
+-nbconvert!=5.4
++nbconvert
+ ipykernel

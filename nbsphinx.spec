@@ -4,7 +4,7 @@
 #
 Name     : nbsphinx
 Version  : 0.3.5
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/3a/2b/9f73582f546c5b2dd37c43f6bd496ca356dc0e480919459fe64575538779/nbsphinx-0.3.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3a/2b/9f73582f546c5b2dd37c43f6bd496ca356dc0e480919459fe64575538779/nbsphinx-0.3.5.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
@@ -27,6 +27,7 @@ BuildRequires : docutils
 BuildRequires : nbconvert
 BuildRequires : nbformat
 BuildRequires : traitlets
+Patch1: nodeps.patch
 
 %description
 =================================
@@ -66,13 +67,14 @@ python3 components for the nbsphinx package.
 
 %prep
 %setup -q -n nbsphinx-0.3.5
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536587125
+export SOURCE_DATE_EPOCH=1536594004
 python3 setup.py build -b py3
 
 %install
