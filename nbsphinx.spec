@@ -4,15 +4,15 @@
 #
 Name     : nbsphinx
 Version  : 0.3.5
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/3a/2b/9f73582f546c5b2dd37c43f6bd496ca356dc0e480919459fe64575538779/nbsphinx-0.3.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3a/2b/9f73582f546c5b2dd37c43f6bd496ca356dc0e480919459fe64575538779/nbsphinx-0.3.5.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
 Group    : Development/Tools
 License  : MIT
-Requires: nbsphinx-python3
-Requires: nbsphinx-license
-Requires: nbsphinx-python
+Requires: nbsphinx-license = %{version}-%{release}
+Requires: nbsphinx-python = %{version}-%{release}
+Requires: nbsphinx-python3 = %{version}-%{release}
 Requires: Jinja2
 Requires: Sphinx
 Requires: docutils
@@ -50,7 +50,7 @@ license components for the nbsphinx package.
 %package python
 Summary: python components for the nbsphinx package.
 Group: Default
-Requires: nbsphinx-python3
+Requires: nbsphinx-python3 = %{version}-%{release}
 
 %description python
 python components for the nbsphinx package.
@@ -74,14 +74,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536594004
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541267908
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/nbsphinx
-cp LICENSE %{buildroot}/usr/share/doc/nbsphinx/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/nbsphinx
+cp LICENSE %{buildroot}/usr/share/package-licenses/nbsphinx/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -90,8 +90,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/nbsphinx/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/nbsphinx/LICENSE
 
 %files python
 %defattr(-,root,root,-)
