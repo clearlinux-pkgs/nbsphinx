@@ -4,7 +4,7 @@
 #
 Name     : nbsphinx
 Version  : 0.4.2
-Release  : 20
+Release  : 21
 URL      : https://files.pythonhosted.org/packages/bd/78/bea43a90c3b363587df4e0554081f39a43a45014641356dcbab44c079d29/nbsphinx-0.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bd/78/bea43a90c3b363587df4e0554081f39a43a45014641356dcbab44c079d29/nbsphinx-0.4.2.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
@@ -16,13 +16,8 @@ Requires: nbsphinx-python3 = %{version}-%{release}
 Requires: Jinja2
 Requires: Sphinx
 Requires: docutils
-Requires: ipykernel
-Requires: matplotlib
 Requires: nbconvert
 Requires: nbformat
-Requires: numpy
-Requires: pandas
-Requires: sphinxcontrib-bibtex
 Requires: traitlets
 BuildRequires : Jinja2
 BuildRequires : Sphinx
@@ -78,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547574557
+export SOURCE_DATE_EPOCH=1551034843
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
