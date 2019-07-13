@@ -4,7 +4,7 @@
 #
 Name     : nbsphinx
 Version  : 0.4.2
-Release  : 22
+Release  : 23
 URL      : https://files.pythonhosted.org/packages/bd/78/bea43a90c3b363587df4e0554081f39a43a45014641356dcbab44c079d29/nbsphinx-0.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bd/78/bea43a90c3b363587df4e0554081f39a43a45014641356dcbab44c079d29/nbsphinx-0.4.2.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
