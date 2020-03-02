@@ -4,7 +4,7 @@
 #
 Name     : nbsphinx
 Version  : 0.5.1
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/4a/f8/bb6f5d65f8230042a164b9986cb8ed5f00b57d14534cc8223a4d863e93c2/nbsphinx-0.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4a/f8/bb6f5d65f8230042a164b9986cb8ed5f00b57d14534cc8223a4d863e93c2/nbsphinx-0.5.1.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
@@ -49,6 +49,7 @@ python components for the nbsphinx package.
 Summary: python3 components for the nbsphinx package.
 Group: Default
 Requires: python3-core
+Provides: pypi(nbsphinx)
 
 %description python3
 python3 components for the nbsphinx package.
@@ -63,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580227057
+export SOURCE_DATE_EPOCH=1583185683
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
