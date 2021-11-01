@@ -4,7 +4,7 @@
 #
 Name     : nbsphinx
 Version  : 0.7.1
-Release  : 46
+Release  : 47
 URL      : https://files.pythonhosted.org/packages/78/b1/02aeb1c0acfdcd8252afedf74168a3e41d8c6708f9b836cc59552b41d0c3/nbsphinx-0.7.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/b1/02aeb1c0acfdcd8252afedf74168a3e41d8c6708f9b836cc59552b41d0c3/nbsphinx-0.7.1.tar.gz
 Summary  : Jupyter Notebook Tools for Sphinx
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1592409714
+export SOURCE_DATE_EPOCH=1635757504
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
