@@ -1,0 +1,12 @@
+0.8.7
+pypi(ipykernel)
+pypi(ipywidgets)
+pypi(jupyterlab)
+pypi(jupytext)
+pypi(matplotlib)
+pypi(numpy)
+pypi(pandas)
+pypi(sphinx_gallery)
+pypi(sphinx_last_updated_by_git)
+pypi(sphinxcontrib_bibtex)
+pypi(sphinxcontrib_svg2pdfconverter)
